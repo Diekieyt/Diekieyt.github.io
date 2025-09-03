@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CS180: Project 0</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+        }
+        h2 {
+            margin-top: 40px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-box {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .caption {
+            font-style: italic;
+            color: #6c757d;
+            margin-top: 10px;
+        }
+        .explanation {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
 
+    <div class="container">
+        <h1>CS180: Project 0 - Camera and Perspective</h1>
+
+        <h2>Task 1: Perspective Distortion in Portraits</h2>
+        <div class="image-container">
+            <div class="image-box">
+                <img src="./media/selfie.jpg" alt="Wide-angle close-up selfie">
+                <p class="caption">Figure 1: Close-up with a wide-angle lens</p>
+            </div>
+            <div class="image-box">
+                <img src="./media/selfie_zoomin.jpg" alt="Telephoto long-distance selfie">
+                <p class="caption">Figure 2: Shot from a distance with a telephoto lens</p>
+            </div>
+        </div>
+        <div class="explanation">
+            <p>
+                <strong>Observation and Principle:</strong> Comparing the two selfies, the close-up shot with a wide-angle lens (Figure 1) exaggerates perspective, causing facial features closer to the camera, like the nose, to appear larger. This effect is often called "distortion." In contrast, the shot taken from a distance with a telephoto lens (Figure 2) flattens the perspective. This minimizes the relative size difference between facial features, resulting in proportions that are often considered more natural, which is why telephoto lenses are preferred for portrait photography.
+            </p>
+        </div>
+
+        <h2>Task 2: Perspective Compression in Streetscapes</h2>
+        <div class="image-container">
+            <div class="image-box">
+                <img src="./media/street_zoomin.jpg" alt="Telephoto compressed street view">
+                <p class="caption">Figure 3: Shot from a distance with a telephoto lens</p>
+            </div>
+            <div class="image-box">
+                <img src="./media/street.jpg" alt="Wide-angle perspective street view">
+                <p class="caption">Figure 4: Close-up with a wide-angle lens</p>
+            </div>
+        </div>
+        <div class="explanation">
+            <p>
+                <strong>Observation and Principle:</strong> The street scene shot from a distance with a telephoto lens (Figure 3) exhibits a "compressed" sense of space, where the foreground tree, mid-ground cars, and background foliage appear closer together than they are in reality. Conversely, the close-up wide-angle shot (Figure 4) expands the sense of space, creating a strong feeling of depth. This demonstrates that the primary factor governing perspective is the physical distance between the camera and the subject, not the lens itself.
+            </p>
+        </div>
+
+        <h2>Task 3: The Dolly Zoom</h2>
+        <div class="image-container">
+            <div class="image-box" style="flex: 1 1 100%;"> <img src="./media/dolly zoom.gif" alt="Dolly Zoom effect GIF">
+                <p class="caption">Figure 5: The Dolly Zoom Effect</p>
+            </div>
+        </div>
+        <div class="explanation">
+            <p>
+                <strong>Observation and Principle:</strong> This effect is created by synchronizing two opposite actions: physically moving the camera backward (a dolly out) while optically zooming the lens in. The camera's movement changes the physical distance to the subject and background, which alters the perspective. The zoom counteracts this movement for the subject, keeping its size constant within the frame. The result is a static subject against a background that appears to warp, creating the signature disorienting effect.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
