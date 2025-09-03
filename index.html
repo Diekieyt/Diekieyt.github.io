@@ -1,17 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <title>Yueting Wang - CS180 Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7f6; 
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #AEC6CF; 
+            padding: 40px 20px;
+            text-align: center;
+            color: #2a3d45; 
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+        .header h2 {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto; 
+            padding: 20px 40px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .project-list h3 {
+            font-size: 1.8em;
+            text-align: center;
+            color: #333;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .project-list ul {
+            list-style: none; 
+            padding: 0;
+        }
+
+        .project-list li {
+            margin-bottom: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-list a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            color: #005A9C; 
+            font-size: 1.1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .project-list a.disabled {
+            color: #999;
+            background-color: #f9f9f9;
+            pointer-events: none; 
+        }
+        
+        .project-list a:not(.disabled):hover {
+            background-color: #f0f8ff; 
+            color: #003366;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-color: #AEC6CF;
+        }
+
+        .project-list strong {
+            color: #333; 
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My CS180 Portfolio!</h1>
-    <a href="./0/index.html">Project 0</a>
-    <a href="./1/index.html">Project 1</a>
+
+    <header class="header">
+        <h1>Yueting Wang</h1>
+        <h2>CS180: Intro to Computer Vision and Computational Photography -- University of California, Berkeley</h2>
+    </header>
+
+    <main class="container">
+        
+        <section class="project-list">
+            <h3>Projects</h3>
+            <ul>
+                <li>
+                    <a href="./0/index.html">
+                        <strong>Project 0:</strong> Becoming Friends with Your Camera
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="disabled">
+                        <strong>Project 1:</strong> (To be announced)
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="disabled">
+                        <strong>Project 2:</strong> (To be announced)
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="disabled">
+                        <strong>Project 3:</strong> (To be announced)
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="disabled">
+                        <strong>Project 4:</strong> (To be announced)
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="disabled">
+                        <strong>Project 5:</strong> (To be announced)
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
 </body>
 </html>
